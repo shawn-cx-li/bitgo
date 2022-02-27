@@ -28,9 +28,10 @@ type Transfer struct {
 		Action string    `json:"action"`
 	} `json:"history"`
 	Entries []struct {
-		Address string `json:"address"`
-		Value   int    `json:"value"`
-		Wallet  string `json:"wallet,omitempty"`
+		Address     string `json:"address"`
+		Value       int    `json:"value"`
+		ValueString string `json:"valueString"`
+		Wallet      string `json:"wallet,omitempty"`
 	} `json:"entries"`
 	Outputs []struct {
 		ID          string `json:"id"`
