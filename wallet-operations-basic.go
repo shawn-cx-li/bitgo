@@ -14,6 +14,7 @@ type Transfer struct {
 	Date          time.Time `json:"date"`
 	Confirmations int       `json:"confirmations"`
 	Value         int       `json:"value"`
+	ValueString   string    `json:"valueString"`
 	BitgoFee      int       `json:"bitgoFee"`
 	Usd           float64   `json:"usd"`
 	UsdRate       float64   `json:"usdRate"`
