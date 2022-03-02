@@ -13,6 +13,7 @@ type Transfer struct {
 	Height        int       `json:"height"`
 	Date          time.Time `json:"date"`
 	Confirmations int       `json:"confirmations"`
+	Type          string    `json:"type"`
 	Value         int       `json:"value"`
 	ValueString   string    `json:"valueString"`
 	BitgoFee      int       `json:"bitgoFee"`
