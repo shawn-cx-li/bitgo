@@ -32,6 +32,8 @@ func New(env string, timeout time.Duration) (b *BitGo, err error) {
 		return nil, errors.New("empty env")
 	}
 	switch env {
+	case "local":
+		env = "http://localhost:3080"
 	case "test":
 		env = "https://test.bitgo.com"
 	case "prod":

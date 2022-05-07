@@ -200,7 +200,7 @@ type SendParams struct {
 	MaxValue                    int    `json:"maxValue,omitempty"`
 	GasPrice                    int    `json:"gasPrice,omitempty"`
 	GasLimit                    int    `json:"gasLimit,omitempty"`
-	SequenceId                  int    `json:"sequenceId,omitempty"`
+	SequenceId                  string `json:"sequenceId,omitempty"`
 	Segwit                      bool   `json:"segwit,omitempty"`
 	LastLedgerSequence          int    `json:"lastLedgerSequence,omitempty"`
 	LedgerSequenceDelta         string `json:"ledgerSequenceDelta,omitempty"`
@@ -241,7 +241,7 @@ type SendToManyParams struct {
 	MaxValue                    int    `json:"maxValue,omitempty"`
 	GasPrice                    int    `json:"gasPrice,omitempty"`
 	GasLimit                    int    `json:"gasLimit,omitempty"`
-	SequenceId                  int    `json:"sequenceId,omitempty"`
+	SequenceId                  string `json:"sequenceId,omitempty"`
 	Segwit                      bool   `json:"segwit,omitempty"`
 	LastLedgerSequence          int    `json:"lastLedgerSequence,omitempty"`
 	LedgerSequenceDelta         string `json:"ledgerSequenceDelta,omitempty"`
