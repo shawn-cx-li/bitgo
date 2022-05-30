@@ -33,6 +33,7 @@ type Transfer struct {
 		Value       int    `json:"value"`
 		ValueString string `json:"valueString"`
 		Wallet      string `json:"wallet,omitempty"`
+		Label       string `json:"label,omitempty"`
 	} `json:"entries"`
 	Outputs []struct {
 		ID          string `json:"id"`
