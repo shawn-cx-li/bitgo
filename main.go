@@ -27,20 +27,13 @@ type ListParams struct {
 	AllTokens bool   `url:"allTokens,omitempty"`
 }
 
-func New(env string, timeout time.Duration) (b *BitGo, err error) {
-	if env == "" {
+func New(url string, timeout time.Duration) (b *BitGo, err error) {
+	if url == "" {
 		return nil, errors.New("empty env")
 	}
-	switch env {
-	case "local":
-		env = "http://localhost:3080"
-	case "test":
-		env = "https://test.bitgo.com"
-	case "prod":
-		env = "https://www.bitgo.com"
-	}
+
 	return &BitGo{
-		host:    env + "/api/v2",
+		host:    url + "/api/v2",
 		timeout: timeout,
 	}, nil
 }
